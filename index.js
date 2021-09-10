@@ -1,3 +1,5 @@
+const { objectExpression } = require("@babel/types");
+
 const artists = [
   {
     "id": 0,
@@ -244,8 +246,14 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
+  const newArray = [];
+  for(let i = 0; i < array.length; i++){
+  if(array[i].years < "0 - 1899")
+  return true
 }
-
+return false
+}
+console.log(get20s(artists))
 // in progress
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -309,7 +317,6 @@ function lotsOfArt(array) {
   return lotsOfPaintings
 }
 
-console.log(lotsOfArt(artists))
 /* ***** END OF TASKS ***** */
 
 
