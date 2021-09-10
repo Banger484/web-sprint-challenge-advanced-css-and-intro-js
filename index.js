@@ -248,6 +248,9 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array) {
   const newArray = [];
   for(let i = 0; i < array.length; i++){
+  [Symbol.split](array[i].years)("", 1){
+
+  }
   if(array[i].years < "0 - 1899")
   return true
 }
